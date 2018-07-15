@@ -1,0 +1,408 @@
+@charset "UTF-8";
+/*-------------------------
+General html
+-----------------------*/
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+
+
+/* HTML nav stuff */
+
+nav {
+	text-align: center;
+	font-family:  "bebas-neue";
+}
+
+
+nav ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Links colors*/
+.NavAndPic a {
+	color: #F2EFEB;
+}
+
+/*nav link*/
+nav a, nav a:visited {
+	color: #F2EFEB; /* This makes it so when someone clicks on nav it does not change colors*/
+}
+
+/*seceted nav link*/
+nav a .selected, nav a:hover {  /*This makes the color change on the nav when over it*/
+	color: #00708C;
+}
+
+/*This fixes the spacing between the words*/
+p {
+	margin: 5px 0;
+	padding: 5px 0;
+	line-height: 30px;
+	font-weight: normal;
+}
+
+
+
+/*----------------------------------------
+TOP IMG
+------------------------------------------*/
+.NavAndPic {
+	background-color: #262625; /* color of nav*/
+	padding: 5px 0 0 0;
+}
+
+.NavAndPic, 
+.topimg{
+  	float: left;
+	width: 100%;
+}
+
+.topimg {
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: fixed;
+}
+
+.topimg img{
+   max-width: 100%;
+}
+
+
+
+
+/*-------------------------
+PAGE: About
+-----------------------*/
+
+/*Fixes the spacing on the about paragraph*/
+.allabout { 
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+.about {
+	margin-bottom: -60px; 
+	font-weight: normal;
+	line-height: 5em; /* This moves down the about us line*/
+  	text-align:center;
+	color: #024959; /* Changes the about us color*/
+}
+
+.about h1 {
+	margin-top: 20px;
+}
+
+ 
+/*-------------------------
+PAGE: Gallery
+-----------------------*/
+
+
+#gallery {
+	margin: 0;
+	padding: 0 0 0 15%;
+	list-style: none;
+	
+}
+
+#gallery li a {
+	margin: 2.5%;
+	background-color: #f5f5f5;
+	color: #bdc3c7;
+}
+
+
+.imggallery img{  
+	display: block;
+    max-width: 250px; 
+    max-height: 250px;
+	
+}
+
+
+
+/*-------------------------
+PAGE: hire us
+-----------------------*/
+
+.contact, 
+.prices{
+	text-align: center;
+	padding: 0;
+	margin-bottom: -70px;
+}
+
+
+.price1{
+	margin-top: 50px;
+}
+
+/*Dropdown stuff*/
+
+.dropdown {
+    position: relative;
+    display: block;
+	padding-bottom: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #F27507;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------
+PAGE: contact us
+-----------------------*/
+.contact {
+	line-height: 0;
+	font-size: 45px;
+	padding-top: 400px;
+}
+
+
+.contact-info li {
+	display: block;	
+	text-align: center;
+	font-size: 20px;
+}
+
+.contact-info a{
+	color: black;
+	text-decoration: none;
+	
+}
+
+.Youtube {
+	margin: 130px 0 20px;                                                                                                                                                                                                                                                 
+}
+
+.mail{
+	margin-bottom: 20px;
+}
+
+/*----------------------------------------
+footer
+------------------------------------------*/
+
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	padding-top: 50px;
+	color: #20261E; /* changes footer color*/
+}
+
+.socialMedia {
+    font-size: 30px;
+	padding: 0;
+	margin: -20px 0 -20px -90px;
+}
+
+
+
+.socialMedia li {
+	display: inline-block;	
+}
+
+
+@media (max-width: 499px) {
+	nav {
+		padding: 20px 0 0 0;
+	}
+	
+	#logo1 img {
+		padding: 0 0 0 0;
+		margin: -50px 0 -60px -25px;
+		height: 200px;
+		width: 400px;
+	}
+	
+	img.resize{
+		width: 300px;
+  		height: 150px;
+		margin-top: -80px;
+		margin-left: 70px;
+		margin-bottom: -80px;
+	}
+	
+	.NavAndPic, 
+	.topimg{
+		margin: -30px 0 30px 0;
+	}
+	.topimg img {
+		max-height: 15em;
+	}
+	
+}
+	
+	
+
+
+@media (max-width: 739px) and (min-width: 500px){
+
+	nav {
+		text-align: center;
+	}
+	
+	nav ul {
+		line-height: 25px;
+	}
+	#logo1 img {
+		padding: 0 0 0 0;
+		margin: -50px 0 -60px -45px;
+	}
+	
+	img.resize{
+		width: 400px;
+  		height: 200px;
+		margin-top: -40px;
+		margin-left: 110px;
+		margin-bottom: -80px;
+	}
+	
+	.NavAndPic, 
+	.topimg{
+		margin: -30px 0 30px 0;
+	}
+	
+	
+	.topimg img {
+		max-height: 25em;
+	}
+	
+	
+/*Pager for gallery size  imgs*/
+	.imggallery img{  
+	display: block;
+    max-width: 400px; 
+    max-height: 400px;
+	}
+	
+	
+	
+	
+
+}
+
+@media (min-width: 740px){
+
+/*----------------------------------------
+Header
+------------------------------------------*/
+	
+	nav {
+		background: none;
+		float: right;
+		font-size: 1.25em;
+		margin-right: 5%;
+		text-align: right;
+		width: 45%;
+		padding: 50px 0 0 0;
+	}
+	
+	nav ul {
+		margin: 5px -30px 0 0;
+	}
+	
+	nav li {
+		display: inline-block;	
+	}
+	
+	nav a {
+		font-weight: 800;
+		padding: 15px 10px 15px 0;
+	}
+		
+	#logo {
+		float: left;
+		margin-left: 5%;
+		text-align: left;
+		width: 45%;
+	}
+	
+	#logo1 img {
+	float: left;
+	margin: -35px -900px -50px -50px;
+	padding: -90px 0 0 0;
+}
+	
+	h1 {
+		font-size: 2.5em;
+	}
+	
+	h2 {
+		font-size: 0.825em;
+		margin-bottom: 20px;
+	}
+	
+	header,
+	.NavAndPic {
+		border-bottom: 5px solid #F27507;  /*thin line under nav*/
+		margin-bottom: 60px;
+	}
+	
+	/* this makes the picture move up against the bar*/
+	.topimg { 
+		padding: -90px 0 10px 0;
+		margin: -60px 0 -90px 0;
+		height: 900px;
+	}
+	
+	.NavAndPic, 
+	.topimg{
+		margin: -30px 0 30px 0;
+	}
+	
+/* for gallery sizing*/
+	#gallery li a {
+	float: left;
+	}
+	
+	.imggallery img{
+	height: auto; 
+    width: auto; 
+	margin: 0 auto;
+    max-width: 500px; 
+    max-height: 500px;
+	}
+	
+	.prices {
+	line-height: 1em;
+	font-size: 20px;
+	padding-top: -90px;
+	
+}
+}
+
+
